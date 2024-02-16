@@ -1,84 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <title>Social Media Dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
+  <header>
+    <div class="header-left">
+      <h2 class="main-Title">Social Media Dashboard</h2>
+      <p>Total Followers: 23,004</p>
+    </div>
+    <div class="header-right">
+      <span>Dark Mode</span>
+      <input type="checkbox" name="" id="">
+    </div>
+  </header>
 
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
-  
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <section class="sec-1">
+      <div class="box-1">
+        <span class="id"><img src="images/icon-facebook.svg" alt="Facebook Icon">@nathanf</span>
+        <h1 class="count">1987</h1>
+        <span class="name">Followers</span>
+        <span class="change"><img src="images/icon-up.svg" alt="upward arrow icon">12 Today</span>
+      </div>
+      <div class="box-1">
+        <span class="id"><img src="images/icon-twitter.svg" alt="Twitter Icon">@nathanf</span>
+        <h1 class="count">1044</h1>
+        <span class="name">Followers</span>
+        <span class="change"><img src="images/icon-up.svg" alt="upward arrow icon">99 Today</span>
+      </div>
+      <div class="box-1">
+        <span class="id"><img src="images/icon-instagram.svg" alt="Instagram Icon">@realnathanf</span>
+        <h1 class="count">11k</h1>
+        <span class="name">Followers</span>
+        <span class="change"><img src="images/icon-up.svg" alt="upward arrow icon">1099 Today</span>
+      </div>
+      <div class="box-1">
+        <span class="id"><img src="images/icon-youtube.svg" alt="Youtube Icon">Nathan F.</span>
+        <h1 class="count">8239</h1>
+        <span class="name">Subscribers</span>
+        <span class="change"><img src="images/icon-down.svg" alt="downward arrow icon">144 Today</span>
+      </div>
+    </section>
+    <section class="sec-2">
+      <h3>Overview - Today</h3>
+      <div>
+        <div class="box-2">
+          <div class="box-top">
+            <span>Page Views</span>
+            <img src="images/icon-facebook.svg" alt="Facebook Icon">
+          </div>
+          <div class="box-bottom">
+            <h2>87</h2>
+            <div>
+              <img src="images/icon-up.svg" alt="upward arrow icon">
+              <span>3%</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="box-top">
+            <span>Likes</span>
+            <img src="images/icon-facebook.svg" alt="Facebook Icon">
+          </div>
+          <div class="box-bottom">
+            <h2>52</h2>
+            <div>
+              <img src="images/icon-down.svg" alt="downward arrow icon">
+              <span>2%</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="box-top">
+            <span>Likes</span>
+            <img src="images/icon-instagram.svg" alt="Instagram Icon">
+          </div>
+          <div class="box-bottom">
+            <h2>5462</h2>
+            <div>
+              <img src="images/icon-up.svg" alt="upward arrow icon">
+              <span>2257%</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="box-top">
+            <span>Profile Views</span>
+            <img src="images/icon-instagram.svg" alt="Instagram Icon">
+          </div>
+          <div class="box-bottom">
+            <h2>52k</h2>
+            <div>
+              <img src="images/icon-up.svg" alt="upward arrow icon">
+              <span>1375%</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="box-top">
+            <span>Retweets</span>
+            <img src="images/icon-twitter.svg" alt="Twitter Icon">
+          </div>
+          <div class="box-bottom">
+            <h2>117</h2>
+            <div>
+              <img src="images/icon-up.svg" alt="upward arrow icon">
+              <span>303%</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="box-top">
+            <span>Likes</span>
+            <img src="images/icon-twitter.svg" alt="Twitter Icon">
+          </div>
+          <div class="box-bottom">
+            <h2>507</h2>
+            <div>
+              <img src="images/icon-up.svg" alt="upward arrow icon">
+              <span>553%</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="box-top">
+            <span>Likes</span>
+            <img src="images/icon-youtube.svg" alt="Youtube Icon">
+          </div>
+          <div class="box-bottom">
+            <h2>107</h2>
+            <div>
+              <img src="images/icon-down.svg" alt="downward arrow icon">
+              <span>19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="box-top">
+            <span>Total Views</span>
+            <img src="images/icon-youtube.svg" alt="Youtube Icon">
+          </div>
+          <div class="box-bottom">
+            <h2>1407</h2>
+            <div>
+              <img src="images/icon-down.svg" alt="downward arrow icon">
+              <span>12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>

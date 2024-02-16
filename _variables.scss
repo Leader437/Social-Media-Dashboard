@@ -1,0 +1,70 @@
+// Breakpoints
+$breakpoint-small: 640px !default; // Phone landscape
+$breakpoint-medium: 960px !default; // Tablet Landscape
+$breakpoint-large: 1200px !default; // Desktop
+$breakpoint-xlarge: 1600px !default; // Large Screens
+
+// Typography
+$global-line-height: 1.5 !default; // 24px
+$fs-2xl: 2.625rem !default; // 42px
+$fs-xl: 2rem !default; // 32px
+$fs-l: 1.5rem !default; // 24px
+$fs-m: 1.25rem !default; // 20px
+$fs-s: 1rem !default; // 16px
+$fs-vs: 0.875rem !default; // 14px
+
+$font: "Inter", sans-serif;
+
+$font-weights: (
+    "regular": 400,
+    "medium": 600,
+    "bold": 700,
+    "bolder": 900
+);
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+
+// Spacings
+$sp-1: 24px;
+$sp-2: 20px;
+$sp-3: 16px;
+$sp-4: 12px;
+$sp-5: 8px;
+$sp-6: 4px;
+
+// Colors
+@mixin theme($light-theme: true) {
+  @if $light-theme {
+    $pri-clr: hsl(163, 72%, 41%);
+    $sec-clr: hsl(356, 69%, 56%);
+    $accent-clr: hsl(232, 19%, 15%);
+    $pri-bg: hsl(230, 17%, 14%);
+    $sec-bg: hsl(228, 28%, 20%);
+    $text-pri: hsl(0, 0%, 100%);
+    $text-sec: hsl(228, 34%, 66%);
+  } @else {
+    $pri-clr: hsl(163, 72%, 41%);
+    $sec-clr: hsl(356, 69%, 56%);
+    $accent-clr: hsl(225, 100%, 98%);
+    $pri-bg: hsl(0, 0%, 100%);
+    $sec-bg: hsl(227, 47%, 96%);
+    $text-pri: hsl(230, 17%, 14%);
+    $text-sec: hsl(228, 12%, 44%);
+  }
+}
+
+// Flex
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($justify: space-between, $align: center, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
