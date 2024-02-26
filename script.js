@@ -11,5 +11,5 @@ toggle.addEventListener('change', e => {
 // });
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        console.log("hello");
+        toggle.checked = true;
 }
