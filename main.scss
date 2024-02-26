@@ -28,7 +28,7 @@ header {
 
   .header-left {
     .main-title {
-      font-size: $fs-m;
+      font-size: $fs-l;
       color: $text-pri;
     }
 
@@ -53,7 +53,7 @@ header {
 
     span {
       display: block;
-      font-size: $fs-s;
+      font-size: $fs-vs;
       color: $text-sec;
       font-weight: weight(medium);
     }
@@ -116,7 +116,7 @@ header {
     .header-right {
       width: 50%;
       justify-content: right;
-      gap: $sp-5;
+      gap: $sp-4;
     }
     .line {
       display: none;

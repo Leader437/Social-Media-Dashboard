@@ -334,7 +334,7 @@ header {
   background-color: transparent;
 }
 header .header-left .main-title {
-  font-size: clamp(2rem, 2.2vw, 2.5rem);
+  font-size: clamp(2.4rem, 2.7vw, 3.2rem);
   color: var(--text-pri);
 }
 header .header-left p {
@@ -358,7 +358,7 @@ header .header-right {
 }
 header .header-right span {
   display: block;
-  font-size: clamp(1.6rem, 1.8vw, 2rem);
+  font-size: clamp(1.4rem, 1.6vw, 1.8rem);
   color: var(--text-sec);
   font-weight: 600;
 }
@@ -419,7 +419,7 @@ header .header-right .switch .slider::before {
   header .header-right {
     width: 50%;
     justify-content: right;
-    gap: 1rem;
+    gap: 2rem;
   }
   header .line {
     display: none;
