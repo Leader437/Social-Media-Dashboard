@@ -9,44 +9,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- Css -->
+  <link rel="stylesheet" href="main.css">
   <title>Social Media Dashboard</title>
 
 </head>
 
-<body>
-  <header>
+<body class="light">
+  <header class="sec-container">
     <div class="header-left">
-      <h2 class="main-Title">Social Media Dashboard</h2>
+      <h2 class="main-title">Social Media Dashboard</h2>
       <p>Total Followers: 23,004</p>
     </div>
+    <span class="line"></span>
     <div class="header-right">
       <span>Dark Mode</span>
-      <input type="checkbox" name="" id="">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
     </div>
   </header>
+  <div class="bg"></div>
 
-  <main>
+  <main class="sec-container">
     <section class="sec-1">
       <div class="box-1">
-        <span class="id"><img src="images/icon-facebook.svg" alt="Facebook Icon">@nathanf</span>
+        <span class="id"><img src="images/icon-facebook.svg" alt="Facebook Icon"><span>@nathanf</span></span>
         <h1 class="count">1987</h1>
         <span class="name">Followers</span>
         <span class="change"><img src="images/icon-up.svg" alt="upward arrow icon">12 Today</span>
       </div>
       <div class="box-1">
-        <span class="id"><img src="images/icon-twitter.svg" alt="Twitter Icon">@nathanf</span>
+        <span class="id"><img src="images/icon-twitter.svg" alt="Twitter Icon"><span>@nathanf</span></span>
         <h1 class="count">1044</h1>
         <span class="name">Followers</span>
         <span class="change"><img src="images/icon-up.svg" alt="upward arrow icon">99 Today</span>
       </div>
       <div class="box-1">
-        <span class="id"><img src="images/icon-instagram.svg" alt="Instagram Icon">@realnathanf</span>
+        <span class="id"><img src="images/icon-instagram.svg" alt="Instagram Icon"><span>@realnathanf</span></span>
         <h1 class="count">11k</h1>
         <span class="name">Followers</span>
         <span class="change"><img src="images/icon-up.svg" alt="upward arrow icon">1099 Today</span>
       </div>
       <div class="box-1">
-        <span class="id"><img src="images/icon-youtube.svg" alt="Youtube Icon">Nathan F.</span>
+        <span class="id"><img src="images/icon-youtube.svg" alt="Youtube Icon"><span>Nathan F.</span></span>
         <h1 class="count">8239</h1>
         <span class="name">Subscribers</span>
         <span class="change"><img src="images/icon-down.svg" alt="downward arrow icon">144 Today</span>
@@ -54,7 +61,7 @@
     </section>
     <section class="sec-2">
       <h3>Overview - Today</h3>
-      <div>
+      <div class="sec-2-container">
         <div class="box-2">
           <div class="box-top">
             <span>Page Views</span>
@@ -162,6 +169,8 @@
       </div>
     </section>
   </main>
+  
+  <script src="script.js"></script>
 </body>
 
 </html>

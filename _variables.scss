@@ -1,61 +1,96 @@
-// Breakpoints
-$breakpoint-small: 640px !default; // Phone landscape
-$breakpoint-medium: 960px !default; // Tablet Landscape
-$breakpoint-large: 1200px !default; // Desktop
-$breakpoint-xlarge: 1600px !default; // Large Screens
+:root {
+  font-size: 10px;
+}
 
 // Typography
 $global-line-height: 1.5 !default; // 24px
-$fs-2xl: 2.625rem !default; // 42px
-$fs-xl: 2rem !default; // 32px
-$fs-l: 1.5rem !default; // 24px
-$fs-m: 1.25rem !default; // 20px
-$fs-s: 1rem !default; // 16px
-$fs-vs: 0.875rem !default; // 14px
+$fs-3xl: clamp(5.6rem, 6vw, 7rem); // 56px
+$fs-2xl: clamp(4.2rem, 4.5vw, 5.5rem); // 42px
+$fs-xl: clamp(3.2rem, 3.5vw, 4rem); // 32px
+$fs-l: clamp(2.4rem, 2.7vw, 3.2rem); // 24px
+$fs-m: clamp(2rem, 2.2vw, 2.5rem); // 20px
+$fs-s: clamp(1.6rem, 1.8vw, 2rem); // 16px
+$fs-vs: clamp(1.4rem, 1.6vw, 1.8rem); // 14px
+$fs-vvs: clamp(1.2rem, 1.4vw, 1.6rem); // 12px
 
 $font: "Inter", sans-serif;
 
 $font-weights: (
-    "regular": 400,
-    "medium": 600,
-    "bold": 700,
-    "bolder": 900
+  "regular": 400,
+  "medium": 600,
+  "bold": 700,
+  "bolder": 900,
 );
 @function weight($weight-name) {
-    @return map-get($font-weights, $weight-name);
+  @return map-get($font-weights, $weight-name);
 }
 
-// Spacings
-$sp-1: 24px;
-$sp-2: 20px;
-$sp-3: 16px;
-$sp-4: 12px;
-$sp-5: 8px;
-$sp-6: 4px;
+// Margins
+$sp-1: 5rem;
+$sp-2: 4rem;
+$sp-3: 3rem;
+$sp-4: 2rem;
+$sp-5: 1rem;
+$sp-6: 0.7rem;
+
+// Paddings
+$pad-1: 5em;
+$pad-2: 4em;
+$pad-3: 3em;
+$pad-4: 2em;
+$pad-5: 1em;
+$pad-6: 0.7em;
 
 // Colors
-@mixin theme($light-theme: true) {
-  @if $light-theme {
-    $pri-clr: hsl(163, 72%, 41%);
-    $sec-clr: hsl(356, 69%, 56%);
-    $accent-clr: hsl(232, 19%, 15%);
-    $pri-bg: hsl(230, 17%, 14%);
-    $sec-bg: hsl(228, 28%, 20%);
-    $text-pri: hsl(0, 0%, 100%);
-    $text-sec: hsl(228, 34%, 66%);
-  } @else {
-    $pri-clr: hsl(163, 72%, 41%);
-    $sec-clr: hsl(356, 69%, 56%);
-    $accent-clr: hsl(225, 100%, 98%);
-    $pri-bg: hsl(0, 0%, 100%);
-    $sec-bg: hsl(227, 47%, 96%);
-    $text-pri: hsl(230, 17%, 14%);
-    $text-sec: hsl(228, 12%, 44%);
+:root {
+  body.light {
+    --pri-clr: hsl(163, 72%, 41%);
+    --sec-clr: hsl(356, 69%, 56%);
+    --accent-clr: hsl(225, 100%, 98%);
+    --pri-bg: hsl(0, 0%, 100%);
+    --sec-bg: hsl(227, 47%, 96%);
+    --text-pri: hsl(230, 17%, 14%);
+    --text-sec: hsl(228, 12%, 44%);
+    --toggle: hsl(230, 22%, 74%);
+    --box-hover: hsl(227, 47%, 92%);
+  }
+  body.dark {
+    --pri-clr: hsl(163, 72%, 41%);
+    --sec-clr: hsl(356, 69%, 56%);
+    --accent-clr: hsl(232, 19%, 15%);
+    --pri-bg: hsl(230, 17%, 14%);
+    --sec-bg: hsl(228, 28%, 20%);
+    --text-pri: hsl(0, 0%, 100%);
+    --text-sec: hsl(228, 34%, 66%);
+    --toggle: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    --box-hover: hsl(228, 28%, 23%);
   }
 }
 
-// Flex
+/*Light Theme*/
+$pri-clr: var(--pri-clr);
+$sec-clr: var(--sec-clr);
+$accent-clr: var(--accent-clr);
+$pri-bg: var(--pri-bg);
+$sec-bg: var(--sec-bg);
+$text-pri: var(--text-pri);
+$text-sec: var(--text-sec);
+$toggle: var(--toggle);
+$box-hover: var(--box-hover);
 
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  $pri-clr: var(--pri-clr);
+  $sec-clr: var(--sec-clr);
+  $accent-clr: var(--accent-clr);
+  $pri-bg: var(--pri-bg);
+  $sec-bg: var(--sec-bg);
+  $text-pri: var(--text-pri);
+  $text-sec: var(--text-sec);
+  $toggle: var(--toggle);
+}
+
+// Flex
 @mixin flexCenter() {
   display: flex;
   justify-content: center;
@@ -63,8 +98,8 @@ $sp-6: 4px;
 }
 
 @mixin flex($justify: space-between, $align: center, $direction: row) {
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
 }
