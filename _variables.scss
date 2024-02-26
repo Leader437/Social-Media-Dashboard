@@ -79,16 +79,16 @@ $toggle: var(--toggle);
 $box-hover: var(--box-hover);
 
 /* Dark Theme */
-@media (prefers-color-scheme: dark) {
-  $pri-clr: var(--pri-clr);
-  $sec-clr: var(--sec-clr);
-  $accent-clr: var(--accent-clr);
-  $pri-bg: var(--pri-bg);
-  $sec-bg: var(--sec-bg);
-  $text-pri: var(--text-pri);
-  $text-sec: var(--text-sec);
-  $toggle: var(--toggle);
-}
+// @media (prefers-color-scheme: dark) {
+//   $pri-clr: var(--pri-clr);
+//   $sec-clr: var(--sec-clr);
+//   $accent-clr: var(--accent-clr);
+//   $pri-bg: var(--pri-bg);
+//   $sec-bg: var(--sec-bg);
+//   $text-pri: var(--text-pri);
+//   $text-sec: var(--text-sec);
+//   $toggle: var(--toggle);
+// }
 
 // Flex
 @mixin flexCenter() {
