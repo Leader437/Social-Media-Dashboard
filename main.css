@@ -514,7 +514,7 @@ header .header-right .switch .slider::before {
   width: 0.8em;
 }
 .sec-1 .box-1:nth-child(4) .change {
-  color: hsl(348, 97%, 39%);
+  color: hsl(348, 71%, 56%);
 }
 
 .sec-2 {
@@ -576,7 +576,7 @@ header .header-right .switch .slider::before {
   color: var(--pri-clr);
 }
 .sec-2 .sec-2-container .box-2 .box-bottom div img[alt="downward arrow icon"] + span {
-  color: hsl(348, 97%, 39%);
+  color: hsl(348, 71%, 56%);
 }
 .sec-2 .sec-2-container .box-2 .box-bottom div span {
   font-size: clamp(1.2rem, 1.4vw, 1.6rem);
